@@ -51,8 +51,8 @@
   margin-right: 10px;
 }
 nav {
-   font-weight: 600;
-   padding-right: 10px;
+  font-weight: 600;
+  padding-right: 10px;
 }
 nav ul {
 list-style: none;
@@ -60,19 +60,19 @@ padding: 0;
 margin: 0;
 }
 nav li a {
-   color: #cf7e72;
-   display: block;
-   text-decoration: none;
-   padding: .5em 1em;
- }
- nav li a:hover {
-   background: tomato;
-   color: white;
- }
+  color: #cf7e72;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+nav li a:hover {
+  background: tomato;
+  color: white;
+}
     body{
         font-family: sans-serif;
         margin: 0;
-        background-color: #FFC49F;
+        background-color: #FFC49F !important;
         margin-left:var(-- width-collapsed);
 
         
@@ -115,12 +115,6 @@ nav li a {
     height: 100px;
     background-size: 100% 100%;
     font-size: 100px;
-  }
-  .botones-redes{
-   position: absolute;
-   top: 40%;
-   left: 10px;
-   
   }
   .botones-redes-btn{
     height: 55px;
