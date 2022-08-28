@@ -111,15 +111,15 @@ nav {
         justify-content: center;
         align-items: center;
      }
-     @media screen and (min-width: 480px) {
-      nav ul{
-        display: flex;
-      }
-    } 
     @media all and (max-width:300px){
       .container{
        grid-template-rows : repeat(5,100px);
       }
+    }
+    .grow:hover{
+      -webkit-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+          transform: scale(0.8);
     }
     .spotify{
       display: block;
@@ -133,4 +133,42 @@ nav {
       font-family: 'Rubik Marker Hatch', cursive;
       text-align: center;
     }
-    
+    @media screen and (min-width: 360px) {
+      nav ul{
+        display: flex;
+      }
+    } 
+    @media (max-width: 768px) {
+       main{
+      background-color:#C5A5B0;
+      
+      }
+      .container{
+         grid-template-areas:
+        'header'
+        'main'
+        'aside'
+        'section-uno'
+        'section-dos'
+        'section-tres'
+        'footer' ;
+        ;
+      }
+      img{
+        height: 50 px;
+      }
+      p{
+        font-size: 20px;
+      }
+      .logo img {
+        height: 30px;
+        margin-right: 10px;
+      }
+      .espacioDeHikki {
+        font-size: small;
+      }
+      nav ul {
+        font-size: small
+      }
+    }
+      
