@@ -1,0 +1,9 @@
+header {
+  background-color: #cac6e1;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=main.css.map */

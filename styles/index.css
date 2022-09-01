@@ -1,54 +1,55 @@
-  
-   .container{
-      height: 100vh;
-      display: grid;
-      gap: 1rem;
-      grid-template-rows: 1fr 2fr 1.5fr 1fr  ;
-      grid-template-columns: 1fr 0.5fr 0.5fr 1fr ;
-      grid-template-areas: "header header header header "
-      "aside main main main"
-      "aside section-uno section-dos section-tres"
-      "footer footer footer footer";
-    }
-    header{ 
-      grid-area:header;
-      display: flex;
-      height: 70px;
-      justify-content: space-between;
-      background-color: #CAC6E1;
-      align-items: center;
-      padding: 10px;
-    }
-    main{
-      grid-area: main ;
-      background-color: #FFC49F 
-    }
-    aside{
-      grid-area: aside ;
-      background-color: #C5A5B0          
-    }
-    section-uno{
-      grid-area: section-uno ;
-      display: flex;
-      background-color: #CAC6E1
-    }
-    section-dos{
-      grid-area: section-dos ;
-      display: flex;
-      background-color: #F5AFA4
-    }
-    section-tres{
-      grid-area: section-tres ;
-      display: flex;
-      background-color: #CAC6E1
-    }
-    footer{
-      grid-area:footer ;
-      background-color: #F49F95
-
-    }
-.logo{display: flex;
-     align-items: center;}
+.container {
+  height: 100vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr 2fr 1.5fr 1fr;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-areas:
+    "header header header header "
+    "aside main main main"
+    "aside section-uno section-dos section-tres"
+    "footer footer footer footer";
+}
+header {
+  grid-area: header;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  background-color: #cac6e1;
+  align-items: center;
+  padding: 10px;
+}
+main {
+  grid-area: main;
+  background-color: #ffc49f;
+}
+aside {
+  grid-area: aside;
+  background-color: #c5a5b0;
+}
+section-uno {
+  grid-area: section-uno;
+  display: flex;
+  background-color: #cac6e1;
+}
+section-dos {
+  grid-area: section-dos;
+  display: flex;
+  background-color: #f5afa4;
+}
+section-tres {
+  grid-area: section-tres;
+  display: flex;
+  background-color: #cac6e1;
+}
+footer {
+  grid-area: footer;
+  background-color: #f49f95;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
 .logo img {
   height: 50px;
   margin-right: 10px;
@@ -58,124 +59,119 @@ nav {
   padding-right: 10px;
 }
 nav ul {
-list-style: none;
-padding: 0;
-margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 nav li a {
   color: #cf7e72;
   display: block;
   text-decoration: none;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
 nav li a:hover {
   background: tomato;
   color: white;
 }
-    body{
-        font-family: sans-serif;
-        margin: 0;
-        background-color: #FFC49F !important;
-        margin-left:var(-- width-collapsed);
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #ffc49f !important;
+  margin-left: var(-- width-collapsed);
+}
 
-        
-    }
-        
-          
-     img {
-             display: block;
-             margin:  5%;
-             height: 300 px;
-             margin-left: auto;
-             margin-right: auto;
-             border: 5px solid #C5A5B0;
-            }
-      p {
-              font-family: 'Fjalla One', sans-serif;
-              font-size: 160%;
-              }
-     .contenedor{
-        background-color: #F49F95;
-        height: 50vh;
-        margin:  5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-     }
-     
-  #foto{
-    width: 100px;
-    height: 100px;
-    background-size: 100% 100%;
-    font-size: 100px;
+img {
+  display: block;
+  margin: 5%;
+  height: 300 px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #c5a5b0;
+}
+p {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 160%;
+}
+.contenedor {
+  background-color: #f49f95;
+  height: 50vh;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#foto {
+  width: 100px;
+  height: 100px;
+  background-size: 100% 100%;
+  font-size: 100px;
+}
+.botones-redes-btn {
+  height: 55px;
+  display: block;
+  box-shadow: 0 3px 6px rgb(0, 0, 0, 0.2);
+  padding: 0 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #a83cbeb4;
+  font-weight: bold;
+}
+.tituloredes {
+  font-family: "Rubik Marker Hatch", cursive;
+}
+#titulo {
+  padding: 0 150px;
+  font-family: "Rubik Marker Hatch", cursive;
+  text-align: center;
+}
+.grow:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+@media screen and (min-width: 360px) {
+  nav ul {
+    display: flex;
   }
-  .botones-redes-btn{
-    height: 55px;
-    display: block;
-    box-shadow: 0 3px 6px rgb(0,0,0,0.2);
-    padding: 0 10px;
-    border-radius: 10px;
-    display: flex ;
-    align-items: center;
-    gap: 10px;
-    font-size: 18px;
-    text-decoration: none;
-    color: 	#a83cbeb4;
-    font-weight: bold;
+}
+@media (max-width: 768px) {
+  main {
+    background-color: #c5a5b0;
   }
-  .tituloredes{
-    font-family: 'Rubik Marker Hatch', cursive;
+  .container {
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "section-uno"
+      "section-dos"
+      "section-tres"
+      "footer";
   }
-  #titulo{
-    padding: 0 150px;
-    font-family: 'Rubik Marker Hatch', cursive;
-    text-align: center;
+  img {
+    height: 50 px;
   }
-  .grow:hover{
-    -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        transform: scale(0.8);
+  p {
+    font-size: 20px;
   }
-  @media screen and (min-width: 360px) {
-    nav ul{
-      display: flex;
-    }
-  } 
-  @media (max-width: 768px) {
-     main{
-    background-color:#C5A5B0;
-    
-    }
-    .container{
-       grid-template-areas:
-      'header'
-      'main'
-      'aside'
-      'section-uno'
-      'section-dos'
-      'section-tres'
-      'footer' ;
-      ;
-    }
-    img{
-      height: 50 px;
-    }
-    p{
-      font-size: 20px;
-    }
-    .logo img {
-      height: 30px;
-      margin-right: 10px;
-    }
-    .espacioDeHikki {
-      font-size: small;
-    }
-    nav ul {
-      font-size: small
-    }
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
   }
-  @media all and (max-width:300px){
-    .container{
-     grid-template-rows : repeat(5,100px);
-    }
+  .espacioDeHikki {
+    font-size: small;
   }
+  nav ul {
+    font-size: small;
+  }
+}
+@media all and (max-width: 300px) {
+  .container {
+    grid-template-rows: repeat(5, 100px);
+  }
+}

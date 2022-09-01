@@ -183,7 +183,7 @@
     "rimraf": "^3.0.2",
     "safe-buffer": "^5.2.1",
     "safer-buffer": "^2.1.2",
-    "sass": "^1.54.5",
+    "sass": "^1.54.8",
     "sass-graph": "^4.0.0",
     "scss-tokenizer": "^0.3.0",
     "semver": "^7.3.7",
@@ -237,6 +237,7 @@
     "yargs-parser": "^20.2.9"
   },
   "scripts": {
+    "sass:watch": "sass -–watch scss/main.scss styles/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

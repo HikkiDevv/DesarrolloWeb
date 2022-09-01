@@ -1,0 +1,15 @@
+header {
+  background-color: #cac6e1;
+  nav {
+    ul {
+      li {
+        list-style-type: none;
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
