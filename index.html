@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="mini blog personal y informacion de contacto para comisiones de paginas web">
+  <meta name="keywords"  content="HTML, css, JS,sass, crear pagina, creacion de paginas web">
 	<link rel="shortcut icon" href="/imagenes/favicon.ico">
     <link rel="stylesheet"href="/styles/index.css" />
+    <link rel="stylesheet"href="/styles/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,14 +28,25 @@
     </div> 
   <nav>
     <ul>
-    <li><a href="/html/informacion.html" class="nav-link">informacion</a></li>
-    <li><a href="/html/contacto.html" class="nav-link">contacto</a></li>
-    <li><a href="/html/proyectos.html" class="nav-link">proyectos</a></li>
-    <li><a href="/html/blog.html" class="nav-link">blog</a></li>
-    <li><a href="/html/redessociales.html" class="nav-link">redes sociales</a></li>
+    <li><a href="/informacion.html" class="">informacion</a></li>
+    <li><a href="/contacto.html" class="">contacto</a></li>
+    <li><a href="/proyectos.html" class="">proyectos</a></li>
+    <li><a href="/blog.html" class="">blog</a></li>
+    <li><a href="/redessociales.html" class="">redes sociales</a></li>
   </nav>
     </header>
     <main>
+      <section class="cajitas">
+        <div class="cajita cajita1">
+        <p> bienvenid@ a la pagina principal</p>
+        </div>
+        <div class="cajita cajita2">
+           <p> no olvides revisar nuestras otras secciones</p>
+        </div>
+        <div class="cajita cajita3">
+        <p> gracias por tu visita!</p>
+        </div>
+    </section>
     <img src="/imagenes/programacion.gif" class="center animate__animated animate__slideInDown">
     <article class = "descripcionDeLaPagina">
     <div class="contenedor animate__animated animate__lightSpeedInRight">
@@ -40,13 +54,16 @@
         <p> Hola soy Dania Ramos y me conocen en internet como Hikki
           tengo un canal de youtobe donde subire contenido sobre programacion y desarrollo de videojuegos 
           de forma facil y entretenida </p> 
+          
     </div>
     </article>
+    
     </main>
     <aside>
       <div class="grow">
       <img src="/imagenes/Hikki 4 png.png" width="250px" height="250px" alt="">
       </div>
+      
        <div class="container-fluid">
          <p id="titulo">unete a mi comunidad</p>
         <a class="botones-redes-btn" href="https://discord.gg/yU7ZMPcQDS">
@@ -58,7 +75,9 @@
           <p class="tituloredes">grupo de whatsapp</p>
         </a>
         </div>
+        
     </aside>
+    
     <section-uno>
     <p> si gustas puedes unirte a mi comunidad en el panel de al lado,tambien visitar mis otras redes en la seccion redes</p>
     </section-uno>
@@ -68,8 +87,15 @@
     <section-tres>
       <p>mensaje de prueba numero 3 añadire mas cosas en la siguiente entrega,la otra seccion con lo pedido estara en la pagina informacion</p>
     </section-tres>
+    
     <footer>
+      <div class="iconos">
+        <i class="fab fa-facebook cajita1"></i>
+        <i class="fab fa-instagram cajita2"></i>
+        <i class="fab fa-linkedin cajita3"></i>
+    </div>
         <section id="copyright">copyright©2022 HikkiDev</section>
+
     </footer>
   </div>
 </body>

@@ -1,12 +1,21 @@
 header {
   background-color: #cac6e1;
   nav {
+    font-weight: 600;
+    padding-right: 10px;
     ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
       li {
-        list-style-type: none;
         a {
+          color: #cf7e72;
+          display: block;
+          text-decoration: none;
+          padding: 0.5em 1em;
           &:hover {
-            text-decoration: underline;
+            background: tomato;
+            color: white;
           }
         }
       }

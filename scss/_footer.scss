@@ -1,0 +1,50 @@
+.pie {
+  display: flex;
+  justify-content: center;
+  background-color: $mainColor;
+  color: white;
+  padding-block: 20px;
+
+  .iconos {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .fab {
+      padding: 1rem;
+    }
+  }
+}
+
+$redes: (
+  facebook: #fae5e3,
+  instagram: #e6b6b7,
+  linkedin: #a7767c,
+);
+
+@each $redsocial, $colordered in $redes {
+  .fa-#{$redsocial} {
+    background-color: $colordered;
+  }
+}
+
+.fa-facebook {
+  @extend %iconitos;
+}
+
+.fa-instagram {
+  @extend .fa-facebook;
+}
+.fa-linkedin {
+  @extend .fa-facebook;
+}
+
+.cajitas .cajita1 {
+  background-color: map-get($redes, instagram);
+}
+.cajitas .cajita2 {
+  background-color: map-get($redes, facebook);
+}
+.cajitas .cajita3 {
+  background-color: map-get($redes, linkedin);
+}

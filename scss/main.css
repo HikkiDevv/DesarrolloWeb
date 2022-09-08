@@ -6,4 +6,9 @@ header nav ul li {
 }
 header nav ul li a:hover {
   text-decoration: underline;
+}
+
+h1.title {
+  font-style: italic 24px/1.5 "Open Sans", sans-serif;
+  color: #f49f95;
 }/*# sourceMappingURL=main.css.map */

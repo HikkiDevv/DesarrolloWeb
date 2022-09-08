@@ -1,6 +1,25 @@
 $title-font: italic 24px/1.5 "Open Sans", sans-serif;
-$color: #f49f95;
 h1.title {
   font-style: $title-font;
-  color: $color;
+}
+$paleta: (
+  "naranja": "#ffc49f",
+  "rojopastel": "#f49f95",
+  "piel": "#f5afa4",
+  "lila": "#cac6e1",
+  "morado": "#c5a5b0",
+);
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap");
+$mainColor: #d743f5;
+$secondaryColor: #972262;
+
+%iconitos {
+  width: 60px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    background-color: red;
+  }
 }

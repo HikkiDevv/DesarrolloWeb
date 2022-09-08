@@ -1,16 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap");
 header {
   background-color: #cac6e1;
 }
-header nav ul li {
-  list-style-type: none;
+header nav {
+  font-weight: 600;
+  padding-right: 10px;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li a {
+  color: #cf7e72;
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
 }
 header nav ul li a:hover {
-  text-decoration: underline;
+  background: tomato;
+  color: white;
 }
 
 h1.title {
   font-style: italic 24px/1.5 "Open Sans", sans-serif;
-  color: #f49f95;
+}
+
+.fa-facebook,
+.fa-linkedin,
+.fa-instagram {
+  width: 60px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+.fa-facebook:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover {
+  background-color: rgba(255, 0, 0, 0.301);
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #ffc49f !important;
+  margin-left: var(-- width-collapsed);
+}
+
+.pie {
+  display: flex;
+  justify-content: center;
+  background-color: #d743f5;
+  color: white;
+  padding-block: 20px;
+}
+.pie .iconos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pie .iconos .fab {
+  padding: 1rem;
+}
+
+.fa-facebook,
+.fa-linkedin,
+.fa-instagram {
+  background-color: #fae5e3;
+}
+
+.fa-instagram {
+  background-color: #e6b6b7;
+}
+
+.fa-linkedin {
+  background-color: #a7767c;
+}
+
+.cajitas .cajita1 {
+  background-color: #e6b6b7;
+}
+
+.cajitas .cajita2 {
+  background-color: #fae5e3;
+}
+
+.cajitas .cajita3 {
+  background-color: #a7767c;
+}
+
+.cajitas {
+  margin-bottom: 3rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cajitas .cajita {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cajitas .cajita1 {
+  width: 200px;
+  height: 150px;
+}
+
+.cajitas .cajita2 {
+  width: 150px;
+  height: 200px;
+}
+
+.cajitas .cajita3 {
+  width: 200px;
+  height: 150px;
+}
+
+.cajitas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

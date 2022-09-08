@@ -1,0 +1,5 @@
+﻿En el archivo index.html sumé el SEO con las siguientes características:
+* Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “mini blog personal y informacion de contacto para comisiones de paginas web
+* "
+* Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: HTML, css, JS,sass, crear pagina, creacion de paginas web
+* Encabezado: para el encabezado del h1 utilicé el texto “El espacio de Hikki”
