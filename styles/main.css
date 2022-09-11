@@ -1,43 +1,17 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap");
-header {
-  background-color: #cac6e1;
-}
-header nav {
-  font-weight: 600;
-  padding-right: 10px;
-}
-header nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-header nav ul li a {
-  color: #cf7e72;
-  display: block;
-  text-decoration: none;
-  padding: 0.5em 1em;
-}
-header nav ul li a:hover {
-  background: tomato;
-  color: white;
-}
-
 h1.title {
   font-style: italic 24px/1.5 "Open Sans", sans-serif;
 }
 
-.fa-facebook,
-.fa-linkedin,
-.fa-instagram {
+.fa-facebook, .fa-linkedin, .fa-instagram {
   width: 60px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
 }
-.fa-facebook:hover,
-.fa-linkedin:hover,
-.fa-instagram:hover {
-  background-color: rgba(255, 0, 0, 0.301);
+.fa-facebook:hover, .fa-linkedin:hover, .fa-instagram:hover {
+  background-color: red;
 }
 
 body {
@@ -45,6 +19,181 @@ body {
   margin: 0;
   background-color: #ffc49f !important;
   margin-left: var(-- width-collapsed);
+}
+body header {
+  grid-area: header;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  background-color: #cac6e1;
+  align-items: center;
+  padding: 10px;
+}
+body header .logo {
+  display: flex;
+  align-items: center;
+}
+body header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+body header nav {
+  font-weight: 600;
+  padding-right: 10px;
+}
+body header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body header nav ul li a {
+  color: #cf7e72;
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+body header nav ul li a:hover {
+  background: tomato;
+  color: white;
+}
+
+main {
+  grid-area: main;
+  background-color: #ffc49f;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #c5a5b0;
+}
+
+section-uno {
+  grid-area: section-uno;
+  display: flex;
+  background-color: #cac6e1;
+}
+
+section-dos {
+  grid-area: section-dos;
+  display: flex;
+  background-color: #f5afa4;
+}
+
+section-tres {
+  grid-area: section-tres;
+  display: flex;
+  background-color: #cac6e1;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #f49f95;
+}
+
+img {
+  display: block;
+  margin: 5%;
+  height: 300 px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #c5a5b0;
+}
+
+p {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 160%;
+}
+
+#foto {
+  width: 100px;
+  height: 100px;
+  background-size: 100% 100%;
+  font-size: 100px;
+}
+
+.botones-redes-btn {
+  height: 55px;
+  display: block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 0 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(168, 60, 190, 0.7058823529);
+  font-weight: bold;
+}
+
+.tituloredes {
+  font-family: "Rubik Marker Hatch", cursive;
+}
+
+#titulo {
+  padding: 0 150px;
+  font-family: "Rubik Marker Hatch", cursive;
+  text-align: center;
+}
+
+.grow:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+h2 {
+  text-align: center;
+}
+
+nav ul {
+  font-size: small;
+}
+
+section-unoi {
+  grid-area: section-unoi;
+  display: flex;
+  background-color: #cac6e1;
+}
+
+section-dosi {
+  grid-area: section-dosi;
+  display: flex;
+  background-color: #f5afa4;
+}
+
+section-tresi {
+  grid-area: section-tresi;
+  display: flex;
+  background-color: #cac6e1;
+}
+
+p {
+  text-align: center;
+}
+
+p {
+  color: rgb(139, 32, 32);
+  font-family: courier;
+  font-size: 160%;
+}
+
+h1 {
+  color: #99202a;
+  font-family: verdana;
+  font-size: 300%;
+}
+
+h1 {
+  text-align: center;
+}
+
+span {
+  font-family: cursive;
+  display: inline-block;
+  border-left: 1px solid #ccc;
+  margin: 10px;
+  height: 60px;
 }
 
 .pie {
@@ -63,9 +212,7 @@ body {
   padding: 1rem;
 }
 
-.fa-facebook,
-.fa-linkedin,
-.fa-instagram {
+.fa-facebook, .fa-linkedin, .fa-instagram {
   background-color: #fae5e3;
 }
 
@@ -125,6 +272,130 @@ body {
   justify-content: center;
   align-items: center;
   padding-block: 1rem;
+}
+
+.spotify {
+  display: block;
+  margin: 10%;
+  height: 300 px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerindex {
+  height: 100vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr 2fr 1.5fr 1fr;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-areas: "header header header header " "aside main main main" "aside section-uno section-dos section-tres" "footer footer footer footer";
+}
+
+.contenedor {
+  background-color: #f49f95;
+  height: 50vh;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerinformacion {
+  height: 100vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr 2fr 1.5fr 1fr;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-areas: "header header header header " "aside main main main" "aside section-unoi section-dosi section-tresi" "footer footer footer footer";
+}
+
+@media (max-width: 768px) {
+  main {
+    background-color: #c5a5b0;
+  }
+  .containerindex {
+    grid-template-areas: "header" "main" "aside" "section-uno" "section-dos" "section-tres" "footer";
+  }
+  img {
+    height: 50 px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  .espacioDeHikki {
+    font-size: small;
+  }
+  nav ul {
+    font-size: small;
+  }
+}
+@media all and (max-width: 300px) {
+  .containerindex {
+    grid-template-rows: repeat(4, 100px);
+  }
+  .containerindex .containerindex {
+    grid-template-areas: "header" "main" "aside" "section-uno" "section-dos" "section-tres" "footer";
+  }
+}
+@media screen and (min-width: 360px) {
+  nav ul {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    background-color: #c5a5b0;
+  }
+}
+@media all and (max-width: 300px) {
+  .containerinformacion {
+    grid-template-rows: repeat(5, 100px);
+  }
+}
+@media (max-width: 768px) {
+  main {
+    background-color: #c5a5b0;
+  }
+  .containerinformacion {
+    grid-template-areas: "header" "main" "aside" "section-unoi" "section-dosi" "section-tresi" "footer";
+  }
+  img {
+    height: 50 px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  .espacioDeHikki {
+    font-size: small;
+  }
+  nav ul {
+    font-size: small;
+  }
+}
+form {
+  /* Centrar el formulario en la página */
+  margin: 100px;
+  width: 100px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 5px solid #c5a5b0;
+  background-color: #cac6e1;
+  border-radius: 3em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 9;
+  text-align: right;
 }
 
 /*# sourceMappingURL=main.css.map */

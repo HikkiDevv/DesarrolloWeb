@@ -1,0 +1,32 @@
+.containerindex {
+  height: 100vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr 2fr 1.5fr 1fr;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-areas:
+    "header header header header "
+    "aside main main main"
+    "aside section-uno section-dos section-tres"
+    "footer footer footer footer";
+}
+.contenedor {
+  background-color: #f49f95;
+  height: 50vh;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerinformacion {
+  height: 100vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr 2fr 1.5fr 1fr;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-areas:
+    "header header header header "
+    "aside main main main"
+    "aside section-unoi section-dosi section-tresi"
+    "footer footer footer footer";
+}

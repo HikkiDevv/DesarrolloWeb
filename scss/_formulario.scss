@@ -1,0 +1,17 @@
+form {
+  /* Centrar el formulario en la página */
+  margin: 100px;
+  width: 100px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 5px solid #c5a5b0;
+  background-color: #cac6e1;
+  border-radius: 3em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 9;
+  text-align: right;
+}

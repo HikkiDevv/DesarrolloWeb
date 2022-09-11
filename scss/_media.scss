@@ -1,0 +1,93 @@
+@media (max-width: 768px) {
+  main {
+    background-color: #c5a5b0;
+  }
+  .containerindex {
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "section-uno"
+      "section-dos"
+      "section-tres"
+      "footer";
+  }
+  img {
+    height: 50 px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  .espacioDeHikki {
+    font-size: small;
+  }
+  nav ul {
+    font-size: small;
+  }
+}
+@media all and (max-width: 300px) {
+  .containerindex {
+    grid-template-rows: repeat(4, 100px);
+    .containerindex {
+      grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "section-uno"
+        "section-dos"
+        "section-tres"
+        "footer";
+    }
+  }
+}
+@media screen and (min-width: 360px) {
+  nav ul {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    background-color: #c5a5b0;
+  }
+}
+//aqui termina index
+@media all and (max-width: 300px) {
+  .containerinformacion {
+    grid-template-rows: repeat(5, 100px);
+  }
+}
+@media (max-width: 768px) {
+  main {
+    background-color: #c5a5b0;
+  }
+  .containerinformacion {
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "section-unoi"
+      "section-dosi"
+      "section-tresi"
+      "footer";
+  }
+  img {
+    height: 50 px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  .espacioDeHikki {
+    font-size: small;
+  }
+  nav ul {
+    font-size: small;
+  }
+}
