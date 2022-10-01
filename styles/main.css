@@ -15,19 +15,22 @@ h1.title {
 }
 
 body {
-  font-family: sans-serif;
   margin: 0;
-  background-color: #ffc49f !important;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%) !important;
   margin-left: var(-- width-collapsed);
+  font-family: "Fjalla One", sans-serif;
 }
 body header {
   grid-area: header;
   display: flex;
   height: 70px;
   justify-content: space-between;
-  background-color: #cac6e1;
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
   align-items: center;
   padding: 10px;
+}
+body header .espacioDeHikki {
+  font-family: "Fjalla One", sans-serif;
 }
 body header .logo {
   display: flex;
@@ -42,61 +45,65 @@ body header nav {
   padding-right: 10px;
 }
 body header nav ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 body header nav ul li a {
-  color: #cf7e72;
+  color: #cf7e72 !important;
   display: block;
   text-decoration: none;
+  font-family: "Fjalla One", sans-serif;
   padding: 0.5em 1em;
 }
 body header nav ul li a:hover {
-  background: tomato;
-  color: white;
+  background-image: linear-gradient(to right, -45deg, #ffc796 0%, #ff6b95 100%) !important;
+  color: white !important;
 }
 
 main {
   grid-area: main;
-  background-color: #ffc49f;
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  border-radius: 100px;
 }
 
 aside {
   grid-area: aside;
-  background-color: #c5a5b0;
+  background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
 }
 
 section-uno {
   grid-area: section-uno;
   display: flex;
   background-color: #cac6e1;
+  border-radius: 100px;
 }
 
 section-dos {
   grid-area: section-dos;
   display: flex;
   background-color: #f5afa4;
+  border-radius: 100px;
 }
 
 section-tres {
   grid-area: section-tres;
   display: flex;
   background-color: #cac6e1;
+  border-radius: 100px;
 }
 
 footer {
   grid-area: footer;
-  background-color: #f49f95;
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
 }
 
 img {
-  display: block;
-  margin: 5%;
-  height: 300 px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid #c5a5b0;
+  display: block !important;
+  margin: 5% !important;
+  height: 300 px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 p {
@@ -111,28 +118,72 @@ p {
   font-size: 100px;
 }
 
-.botones-redes-btn {
-  height: 55px;
-  display: block;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  padding: 0 10px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 18px;
-  text-decoration: none;
-  color: rgba(168, 60, 190, 0.7058823529);
-  font-weight: bold;
+a:link {
+  text-decoration: none !important;
 }
 
-.tituloredes {
+a:visited {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+a:active {
+  text-decoration: none !important;
+}
+
+.botones-redes-btn {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 170px;
+  font-weight: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  outline: none;
+  border-radius: 100px;
+  border: none;
+  align-items: center;
+  margin-bottom: 30px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+  z-index: 1;
+}
+.botones-redes-btn .tituloredes {
   font-family: "Rubik Marker Hatch", cursive;
+  color: #fff;
+}
+
+.botones-redes-btn:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.botones-redes-btn:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #ff6392;
+  right: 0;
+}
+
+.botones-redes-btn:active {
+  top: 2px;
 }
 
 #titulo {
   padding: 0 150px;
-  font-family: "Rubik Marker Hatch", cursive;
+  font-family: "Fjalla One", sans-serif;
   text-align: center;
 }
 
@@ -144,6 +195,7 @@ p {
 
 h2 {
   text-align: center;
+  font-family: "Fjalla One", sans-serif;
 }
 
 nav ul {
@@ -154,18 +206,21 @@ section-unoi {
   grid-area: section-unoi;
   display: flex;
   background-color: #cac6e1;
+  border-radius: 100px;
 }
 
 section-dosi {
   grid-area: section-dosi;
   display: flex;
   background-color: #f5afa4;
+  border-radius: 100px;
 }
 
 section-tresi {
   grid-area: section-tresi;
   display: flex;
   background-color: #cac6e1;
+  border-radius: 100px;
 }
 
 p {
@@ -174,13 +229,13 @@ p {
 
 p {
   color: rgb(139, 32, 32);
-  font-family: courier;
+  font-family: "Fjalla One", sans-serif;
   font-size: 160%;
 }
 
 h1 {
   color: #99202a;
-  font-family: verdana;
+  font-family: "Fjalla One", sans-serif;
   font-size: 300%;
 }
 
@@ -189,7 +244,7 @@ h1 {
 }
 
 span {
-  font-family: cursive;
+  font-family: "Fjalla One", sans-serif;
   display: inline-block;
   border-left: 1px solid #ccc;
   margin: 10px;
@@ -234,6 +289,10 @@ span {
 
 .cajitas .cajita3 {
   background-color: #a7767c;
+}
+
+#copyright {
+  font-family: "Fjalla One", sans-serif;
 }
 
 .cajitas {
@@ -298,6 +357,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 30% 70% 69% 31%/30% 31% 69% 70%;
 }
 
 .containerinformacion {
@@ -307,6 +367,15 @@ span {
   grid-template-rows: 1fr 2fr 1.5fr 1fr;
   grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
   grid-template-areas: "header header header header " "aside main main main" "aside section-unoi section-dosi section-tresi" "footer footer footer footer";
+}
+
+.containerredes {
+  height: 100vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr 2fr 1.5fr 1fr;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-areas: "header  " "main" "footer ";
 }
 
 @media (max-width: 768px) {
@@ -382,20 +451,267 @@ span {
 }
 form {
   /* Centrar el formulario en la página */
-  margin: 100px;
-  width: 100px;
+  margin: 450px;
+  width: 450px;
   /* Esquema del formulario */
-  padding: 1em;
-  border: 5px solid #c5a5b0;
-  background-color: #cac6e1;
+  padding: 10px;
+  border: 5px solid #c5a5b0 !important;
+  background-color: #cac6e1 !important;
   border-radius: 3em;
 }
 
 label {
   /* Tamaño y alineación uniforme */
   display: inline-block;
-  width: 9;
+  width: 100px;
   text-align: right;
+}
+
+.tracking-in-contract {
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+.box-shadow {
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: none;
+  scrollbar-color: #e6b3f5 #e2c1c1;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e2c1c1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e6b3f5;
+  border-radius: 10px;
+  border: 3px dashed #413535;
+}
+
+#linke {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bounce-top {
+  -webkit-animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both;
+}
+
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+.jello-horizontal {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

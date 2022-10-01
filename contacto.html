@@ -6,29 +6,37 @@
   <meta name="description" content="mini blog personal y informacion de contacto para comisiones de paginas web">
   <meta name="keywords"  content="HTML, css, JS,sass, crear pagina, creacion de paginas web">
 	<link rel="shortcut icon" href="/imagenes/favicon.ico">
-    <title> Mi espacio </title>
-    <link rel="stylesheet"href="/styles/main.css" />
+  <title> Mi espacio </title>
+  <link rel="stylesheet"href="/styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
 <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
 </head>
 <body> 
     <header> 
       <div class="logo">
         <img src="/imagenes/logo.jpg" alt="logo de la pagina">
-        <h2 class="espacioDeHikki">El espacio de Hikki : contacto</h2>
+        <h2 class="espacioDeHikki tracking-in-contract">El espacio de Hikki : Contacto</h2>
         </div> 
     <nav>
       <ul>
-      <li><a href="/index.html">inicio</a> </li>
-      <li><a href="/proyectos.html">proyectos </a></li>
-      <li><a href="/blog.html">blog</a></li>
-      <li><a href="/redessociales.html">redes sociales</a></li>
+      <li><a href="/index.html"class="text-focus-in">inicio</a> </li>
+      <li><a href="/informacion.html"class="text-focus-in">informacion</a></li>
+      <li><a href="/proyectos.html"class="text-focus-in">proyectos </a></li>
+      <li><a href="/blog.html"class="text-focus-in">blog</a></li>
+      <li><a href="/redessociales.html"class="text-focus-in">redes sociales</a></li>
       </ul>
       </nav>
   </header>
-  <img src="/imagenes/coding3.gif">
-  <div class="contenedor">
+  <img class=" center animate__animated animate__slideInDown box-shadow" src="/imagenes/coding3.gif">
+  <div class="contenedor  animate__animated animate__lightSpeedInRight box-shadow">
     <p>rellena el siguiente formulario
      en caso quieras preguntarme alguna duda
      o sobre un proyecto en especifico</p>
@@ -36,7 +44,8 @@
     <section>
         <h2>contacta conmigo<h2>
     </section>
-    <form action="/action_page.php" class="container-fluid was-validated">
+    <article>
+    <form action="/action_page.php" class="container-fluid was-validated box-shadow">
       <div class="mb-3 mt-3">
         <label for="uname" class="form-label">Usuario:</label>
         <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
@@ -52,9 +61,22 @@
       </div>
       <button type="submit" class="btn btn-primary">enviar</button>
     </form>
-    
-    <footer>
-        <section id="copyright">copyright©2022 HikkiDev</section>
-    </footer>
+    </article>
+    <div id="linke" class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium"
+     data-theme="light" data-type="HORIZONTAL" data-vanity="hikkidevv" data-version="v1">
+     <a class="badge-base__link LI-simple-link" href="https://pe.linkedin.com/in/hikkidevv?trk=profile-badge"></a></div>
+     <div id="wsc">
+      
+      <a  href="https://wa.me/+51956145409"><img id="wsi" src="/imagenes/whatsapp.png" alt="whatsapp" > </a>
+      </div>          
+      <footer>
+        <div class="iconos">
+          <i class="fab fa-facebook cajita1"></i>
+          <i class="fab fa-instagram cajita2"></i>
+          <i class="fab fa-linkedin cajita3"></i>
+      </div>
+          <section id="copyright">copyright©2022 HikkiDev</section>
+  
+      </footer>
 </body>
 </html>
